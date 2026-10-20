@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Định lý}
+\newtheorem{definition}{Định nghĩa}
+
+\title{\textbf{Ghi chú bài giảng Giải tích \& Đại số}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Định lý kẹp (Sandwich Theorem)}
+
+\begin{theorem}
+Cho ba hàm số $f(x)$, $g(x)$, $h(x)$ thỏa mãn:
+\[
+f(x) \leq g(x) \leq h(x)
+\]
+với mọi $x$ thuộc một lân cận của điểm $a$. 
+
+Nếu:
+\[
+\lim_{x \to a} f(x) = \lim_{x \to a} h(x) = L
+\]
+thì:
+\[
+\lim_{x \to a} g(x) = L.
+\]
+\end{theorem}
+
+\section{Khai triển Taylor -- Maclaurin cơ bản}
+
+Khi $x \to 0$, ta có các khai triển Maclaurin chuẩn sau:
+
+\begin{align*}
+e^x &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!} + o(x^n) \\
+\sin(x) &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots + (-1)^n \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+2})
+\end{align*}
+
+\section{Bài tập về nhà}
+
+\begin{enumerate}
+    \item[\textbf{Câu 1:}] Tính giới hạn:
+    \[
+    I = \lim_{x \to 0} \frac{e^x - 1 - x}{x^2}
+    \]
+
+    \item[\textbf{Câu 2:}] Cho ma trận:
+    \[
+    A = \begin{pmatrix}
+    1 & 2 & 3 \\
+    0 & 1 & 4 \\
+    5 & 6 & 0
+    \end{pmatrix}
+    \]
+    Tìm định thức $\det(A)$ và ma trận nghịch đảo $A^{-1}$.
+\end{enumerate}
+
+\end{document}

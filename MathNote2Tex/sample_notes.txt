@@ -1,0 +1,12 @@
+Ghi chú bài giảng Giải tích & Đại số:
+1. Định lý kẹp (Sandwich Theorem):
+Cho 3 hàm số f(x), g(x), h(x) thỏa mãn f(x) <= g(x) <= h(x) với mọi x thuộc lân cận điểm a.
+Nếu lim (x->a) của f(x) = lim (x->a) của h(x) = L thì lim (x->a) của g(x) cũng bằng L.
+
+2. Khai triển Taylor - Maclaurin cơ bản:
+Hàm e^x = 1 + x + x^2/2! + x^3/3! + ... + x^n/n! + o(x^n) khi x -> 0.
+Hàm sin(x) = x - x^3/3! + x^5/5! - ... + (-1)^n * x^(2n+1)/(2n+1)! + o(x^(2n+2)).
+
+3. Bài tập về nhà:
+Câu 1: Tính giới hạn I = lim (x->0) của (e^x - 1 - x) / (x^2).
+Câu 2: Cho ma trận A = [1 2 3; 0 1 4; 5 6 0]. Tìm định thức det(A) và ma trận nghịch đảo A^-1.
